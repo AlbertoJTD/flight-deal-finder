@@ -18,7 +18,7 @@ flight_search = FlightSearch()
 
 for data in sheet_data:
     if not data['iataCode']:
-        data['iataCode'] = flight_search.update_iataCode(data)
+        data['iataCode'] = flight_search.update_iataCode(data['city'])
 
 
 print(sheet_data)
