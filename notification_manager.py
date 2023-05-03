@@ -1,7 +1,8 @@
 import smtplib
 
-EMAIL = ""
-PASSWORD_APP = ""
+EMAIL = "HERE_GOES_YOUR_EMAIL"
+PASSWORD_APP = "HERE_GOES_YOUR_PASSWORD_APP_FROM_GMAIL"
+
 
 class NotificationManager:
     #This class is responsible for sending notifications with the deal flight details.

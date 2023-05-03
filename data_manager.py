@@ -1,6 +1,6 @@
 import requests
 
-SHEETY_ENDPOINT = ''
+SHEETY_ENDPOINT = 'HERE_GOES_YOUR_ENDPOINT_FROM_SHEETY'
 
 class DataManager:
     #This class is responsible for talking to the Google Sheet.
