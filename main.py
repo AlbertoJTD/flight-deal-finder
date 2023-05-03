@@ -3,13 +3,24 @@
 import requests
 
 from data_manager import DataManager
+from flight_search import FlightSearch
 
 # GET INFO FROM GOOGLE SHEETS - BASIC AUTH
 
-sheet_endpoint = ''
 SHEETY_USERNAME = ''
 SHEETY_PASSWORD = ''
 
 
-sheet_data = DataManager(SHEETY_USERNAME, SHEETY_PASSWORD, sheet_endpoint,).get_data()
+data_manager = DataManager(SHEETY_USERNAME, SHEETY_PASSWORD)
+sheet_data = data_manager.get_data()['prices']
+
+flight_search = FlightSearch()
+
+for data in sheet_data:
+    if not data['iataCode']:
+        data['iataCode'] = flight_search.update_iataCode(data)
+
+
 print(sheet_data)
+data_manager.destination_data = sheet_data
+data_manager.update_destination_codes()
