@@ -23,4 +23,3 @@ class DataManager:
             }
 
             response = requests.put(f"{SHEETY_ENDPOINT}/{city['id']}", json=new_info, auth=(self.username, self.password))
-            print(response.text)
