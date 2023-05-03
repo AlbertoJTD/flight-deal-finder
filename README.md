@@ -10,6 +10,6 @@ If you want to travel but want to save some money, use this app and receive an e
 </p>
 
 2. Create an account in [Sheety](https://sheety.co/) to access to your Google Sheet file
-3. Enable your GET and PUT endpoint in [Sheety](https://sheety.co/) to be able to update the content, [here is the documentation](https://tequila.kiwi.com/portal/docs)
-4. Create your account at [Tequila](https://tequila.kiwi.com) to access flight information
+3. Enable your GET and PUT endpoint in [Sheety](https://sheety.co/) to be able to update the content
+4. Create your account at [Tequila](https://tequila.kiwi.com) to access flight information, [here is the documentation](https://tequila.kiwi.com/portal/docs)
 5. Replace the keys and the endpoint with your own information
